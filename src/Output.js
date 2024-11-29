@@ -8,7 +8,6 @@ const Output = ({ mouseSuccessClicks }) => {
     <div
       style={{
         height: "200px",
-        border: "1px solid black",
         margin: "16px",
         display: "flex",
         gap: "8px",
@@ -16,9 +15,18 @@ const Output = ({ mouseSuccessClicks }) => {
       }}
     >
       <div
-        style={{ flex: 2, borderRight: "1px solid black", textAlign: "center" }}
+        style={{
+          flex: 2,
+          border: "1px solid black",
+          textAlign: "center",
+        }}
       >
-        <h4 style={{ margin: 0 }}> Mouse click number</h4>
+        <h4
+          style={{ margin: 0, padding: "8px", borderBottom: "1px solid black" }}
+        >
+          {" "}
+          Mouse click number
+        </h4>
         <ul style={{ listStyle: "none" }}>
           {mouseSuccessClicks.map((item) => (
             <li>{item.count}</li>
@@ -26,9 +34,18 @@ const Output = ({ mouseSuccessClicks }) => {
         </ul>
       </div>
       <div
-        style={{ flex: 1, borderLeft: "1px solid black", textAlign: "center" }}
+        style={{
+          flex: 1,
+          border: "1px solid black",
+          textAlign: "center",
+        }}
       >
-        <h4 style={{ margin: 0 }}> Reaction time</h4>
+        <h4
+          style={{ margin: 0, padding: "8px", borderBottom: "1px solid black" }}
+        >
+          {" "}
+          Reaction time
+        </h4>
         <ul style={{ listStyle: "none" }}>
           {mouseSuccessClicks.map((item) => (
             <li>{renderTimeInSec(item.time)}</li>
