@@ -25,12 +25,8 @@ Make sure you have the following installed before starting:
 ## Installation
 
 Follow these steps to set up the project on your local machine:
+1. Clone the repository
+2. Install dependencies: `npm i`  
+3. Start the development server: `npm start`
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-2.**npm i**
-
-3. **npm start**
 
