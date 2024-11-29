@@ -31,5 +31,6 @@ Follow these steps to set up the project on your local machine:
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
 2.**npm i**
+
 3. **npm start**
 
