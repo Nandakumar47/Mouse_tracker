@@ -1,7 +1,6 @@
 # Click tracker 
 
 A brief description of the application.  
-For example:  
 **A click-based reaction timer game that tracks user reaction times and provides insights into their performance.**
 
 ---
