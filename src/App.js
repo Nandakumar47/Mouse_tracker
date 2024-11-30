@@ -28,7 +28,8 @@ export default function App() {
       return;
     }
     setCurrentStatus("start");
-
+    const time = new Date().getTime();
+    setStartTime(time);
     const reference = setInterval(handleTimeInterval, givenInterval);
     setTimerReference(reference);
   };
@@ -56,6 +57,10 @@ export default function App() {
     setStartTime(time);
   };
   const handleBoxClick = () => {
+    if (currentStatus === "pause") {
+      alert("Click on resume to continue the game");
+      return;
+    }
     timerReference && clearInterval(timerReference);
     const reference = setInterval(handleTimeInterval, 2000);
     setTimerReference(reference);
