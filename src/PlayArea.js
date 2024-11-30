@@ -6,7 +6,7 @@ const PlayArea = ({ position, handleBoxClick, currentStatus }) => {
         height: "200px",
         margin: "16px",
         position: "relative",
-        border: "2px solid black",
+        border: "1px solid black",
       }}
     >
       {currentStatus === "start" || currentStatus === "pause" ? (

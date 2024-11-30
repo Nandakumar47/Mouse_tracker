@@ -13,7 +13,7 @@ const Header = ({
         display: "flex",
         gap: "8px",
         padding: "16px",
-        borderBottom: "1px solid",
+        borderBottom: "2px solid black",
       }}
     >
       <input
@@ -23,16 +23,40 @@ const Header = ({
         value={givenInterval}
         onChange={(evt) => setGivenInterval(evt.target.value)}
       />
-      <button disabled={currentStatus === "start"} onClick={handleStartClick}>
+      <button
+        disabled={currentStatus === "start"}
+        onClick={handleStartClick}
+        style={{
+          padding: "8px 16px",
+          borderRadius: "4px",
+          fontWeight: 600,
+          cursor: "pointer",
+        }}
+      >
         {currentStatus === "pause" ? "Resume" : "Start"}
       </button>
       <button
         disabled={currentStatus === "pause" || currentStatus === "stop"}
         onClick={handlePauseClick}
+        style={{
+          padding: "8px 16px",
+          borderRadius: "4px",
+          fontWeight: 600,
+          cursor: "pointer",
+        }}
       >
         Pause
       </button>
-      <button disabled={currentStatus === "stop"} onClick={handleResetClick}>
+      <button
+        disabled={currentStatus === "stop"}
+        onClick={handleResetClick}
+        style={{
+          padding: "8px 16px",
+          borderRadius: "4px",
+          fontWeight: 600,
+          cursor: "pointer",
+        }}
+      >
         Reset
       </button>
     </div>

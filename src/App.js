@@ -52,9 +52,9 @@ export default function App() {
     setMouseSuccessClicks([]);
   };
   const handleTimeInterval = () => {
-    generateRandomPosition();
     const time = new Date().getTime();
     setStartTime(time);
+    generateRandomPosition();
   };
   const handleBoxClick = () => {
     if (currentStatus === "pause") {
@@ -78,7 +78,7 @@ export default function App() {
     setPosition({ top, left });
   };
   return (
-    <div style={{ border: "1px solid black", margin: "auto", width: "500px" }}>
+    <div style={{ border: "2px solid black", margin: "auto", width: "500px" }}>
       <Header
         handleStartClick={handleStartClick}
         handlePauseClick={handlePauseClick}
